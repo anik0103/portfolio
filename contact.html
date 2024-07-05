@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+
+    <div class="p-6 rounded-lg shadow-lg w-full max-w-md backdrop-blur-3xl bg-gray-600  border-4 text-white">
+        <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+        <form id="contactForm">
+            <div class="mb-4">
+                <label class="block text-white" for="name">Name</label>
+                <input type="text" id="name" name="name" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-white" for="contactNo">Contact No</label>
+                <input type="text" id="contactNo" name="contactNo" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-white" for="email">Email</label>
+                <input type="email" id="email" name="email" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-white" for="description">Description</label>
+                <textarea id="description" name="description" class="mt-1 p-2 w-full border border-gray-300 rounded-md resize-none text-black" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Submit</button>
+        </form>
+        <p id="successMessage" class="mt-4 text-green-500 hidden">Your message has been sent successfully!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
